@@ -1,0 +1,247 @@
+$priColor : #ec5242;
+$secColor : #272a31;
+$grayColor : #d3d3d3;
+$fontFamily : 'Lato', sans-serif;
+
+* {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+}
+
+body {
+  font-family: $fontFamily;
+}
+
+/* defualt style for all `a` tags */
+a {
+  text-decoration: none;
+}
+
+/* defualt style for all `ul, li` tags */
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style-type: none;
+  }
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+// Page logo----
+.logo-icon-container {
+  .logo {
+    display: flex;
+    align-items: center;
+
+    .logo-img {
+      width: 60px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .logo-name {
+      color: $secColor;
+      font-size: 20px;
+      font-weight: 700;
+
+      span {
+        color: $priColor;
+      }
+    }
+  }
+}
+
+// top nav -----------
+.top-nav {
+  display: none;
+}
+
+// mobile menu pop up ------------
+.mobile-menu {
+  position: fixed;
+  background-color: $secColor;
+  width: 60%;
+  top: 60px;
+  right: 0;
+  display: none;
+
+  ul {
+    margin: 30px;
+
+    .mobile-link {
+      font-size: 18px;
+      font-weight: 600;
+      display: block;
+      color: $grayColor;
+      margin: 35px 0;
+      padding: 0 0 10px 8px;
+      border-bottom: 1px solid $priColor;
+    }
+
+    .mobile-link:hover,
+    .mobile-link:focus {
+      color: $priColor;
+      border-bottom: 1px solid $grayColor;
+    }
+  }
+}
+
+.mobile-menu.active {
+  display: block;
+}
+// mobile menu pop up ends here---------
+
+// Main nav links----------
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 58px;
+
+  .nav-container {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+  }
+}
+
+.main-nav-links {
+  display: none;
+}
+
+// hamburger icon---------------
+.hamburger {
+  display: block;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease-in-out;
+  background-color: $grayColor;
+  margin-right: 20px;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: $priColor;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: $priColor;
+}
+
+@media (min-width: 765px) {
+
+  // top nav -----------
+  .top-nav {
+    background-color: $secColor;
+    display: block;
+
+    .top-nav-links {
+      display: flex;
+      justify-content: end;
+      padding: 12px 0;
+
+      a {
+        margin-left: 20px;
+        color: $grayColor;
+        font-size: 12px;
+      }
+
+      .sign-up-btn {
+        border: 1px solid $grayColor;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.2s linear;
+      }
+
+      .sign-up-btn:hover,
+      .sign-up-btn:focus {
+        color: $priColor;
+      }
+    }
+  }
+
+  // main nav ---------------
+  nav {
+    width: 100vw;
+    height: 55px;
+    background-color: #fff;
+
+    .nav-container {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      align-items: center;
+      height: 55px;
+      margin: 0 auto;
+      width: 80%;
+    }
+  }
+
+  // Main nav links----------
+  .main-nav-links {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      .nav-link {
+        margin-left: 50px;
+        color: $secColor;
+        font-size: 17px;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+
+      .nav-link:hover,
+      .nav-link:focus,
+      .nav-link:active {
+        color: $priColor;
+      }
+    }
+  }
+
+  // hamburger icon---------------
+  .hamburger {
+    display: none;
+  }
+}
+
+// .slogan {
+//     position: relative;
+//     font-weight: 700;
+//     max-width: 800px;
+//     margin-top: 10px;
+//     color: var(--secondary-color);
+//     font-size: 30px;
+//     background-image:
+//       linear-gradient(
+//         -225deg,
+//         #ec5242 0%,
+//         #44107a 29%,
+//         #ec5242 67%,
+//         #ec5242 100%
+//       );
+//     background-clip: border-box;
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//   }

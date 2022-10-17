@@ -1,0 +1,238 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* defualt style for all `a` tags */
+a {
+  text-decoration: none;
+}
+
+/* defualt style for all `ul, li` tags */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.logo-icon-container .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.logo-icon-container .logo .logo-img {
+  width: 60px;
+}
+
+.logo-icon-container .logo .logo-img img {
+  width: 100%;
+}
+
+.logo-icon-container .logo .logo-name {
+  color: #272a31;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.logo-icon-container .logo .logo-name span {
+  color: #ec5242;
+}
+
+.top-nav {
+  display: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  background-color: #272a31;
+  width: 60%;
+  top: 60px;
+  right: 0;
+  display: none;
+}
+
+.mobile-menu ul {
+  margin: 30px;
+}
+
+.mobile-menu ul .mobile-link {
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  color: #d3d3d3;
+  margin: 35px 0;
+  padding: 0 0 10px 8px;
+  border-bottom: 1px solid #ec5242;
+}
+
+.mobile-menu ul .mobile-link:hover,
+.mobile-menu ul .mobile-link:focus {
+  color: #ec5242;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.mobile-menu.active {
+  display: block;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 58px;
+}
+
+nav .nav-container {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+}
+
+.main-nav-links {
+  display: none;
+}
+
+.hamburger {
+  display: block;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease-in-out;
+  background-color: #d3d3d3;
+  margin-right: 20px;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  -webkit-transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
+  background-color: #ec5242;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: #ec5242;
+}
+
+@media (min-width: 765px) {
+  .top-nav {
+    background-color: #272a31;
+    display: block;
+  }
+
+  .top-nav .top-nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+    padding: 12px 0;
+  }
+
+  .top-nav .top-nav-links a {
+    margin-left: 20px;
+    color: #d3d3d3;
+    font-size: 12px;
+  }
+
+  .top-nav .top-nav-links .sign-up-btn {
+    border: 1px solid #d3d3d3;
+    padding: 5px;
+    border-radius: 10px;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+
+  .top-nav .top-nav-links .sign-up-btn:hover,
+  .top-nav .top-nav-links .sign-up-btn:focus {
+    color: #ec5242;
+  }
+
+  nav {
+    width: 100vw;
+    height: 55px;
+    background-color: #fff;
+  }
+
+  nav .nav-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 55px;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .main-nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .main-nav-links li .nav-link {
+    margin-left: 50px;
+    color: #272a31;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .main-nav-links li .nav-link:hover,
+  .main-nav-links li .nav-link:focus,
+  .main-nav-links li .nav-link:active {
+    color: #ec5242;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
