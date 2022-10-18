@@ -39,6 +39,20 @@ ul {
   margin: auto;
 }
 
+/* horizontal rule ------------ */
+.horizontal-line {
+  text-align: center;
+  margin-bottom: 40px;
+
+  .hr {
+    background-color: $priColor;
+    width: 60px;
+    margin: auto;
+    height: 1px;
+    border-radius: 20px;
+  }
+}
+
 /* Page logo---- */
 .logo-icon-container {
   .logo {
@@ -81,7 +95,6 @@ ul {
   right: 0;
   display: none;
   z-index: 9;
-  // border: 3px solid $secColor;
 
   ul {
     margin: 30px;
@@ -113,6 +126,7 @@ ul {
 header {
   height: 76px;
   background-color: #fff;
+  overflow: hidden;
 }
 
 /* Main nav links---------- */
@@ -170,14 +184,16 @@ nav {
 /* headline sectionn --------- */
 .headeline-container {
   position: relative;
+  overflow: hidden;
 
   .headline-image {
-    width: 100vw;
+    width: 100%;
     height: 205px;
     background-image: url('../images/images\ \(5\).jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
   }
 }
 
@@ -261,19 +277,6 @@ nav {
     margin-bottom: 20px;
   }
 
-  .horizontal-line {
-    text-align: center;
-    margin-bottom: 40px;
-
-    .hr {
-      background-color: $priColor;
-      width: 60px;
-      margin: auto;
-      height: 1px;
-      border-radius: 20px;
-    }
-  }
-
   .event-card {
     display: flex;
     flex-direction: column;
@@ -336,6 +339,69 @@ nav {
   font-weight: 400;
   letter-spacing: 3px;
   line-height: 1.5;
+}
+
+/* other Category section------------- */
+.other-categories-section {
+  padding: 60px 0;
+  background-color: $secColor;
+
+  h2 {
+    text-align: center;
+    color: $grayColor;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+
+    li {
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    .history {
+      color: #b9b3b3;
+    }
+
+    .fitness {
+      color: #868080;
+      font-size: 22px;
+    }
+
+    .presentation {
+      color: #d1caca;
+    }
+
+    .jokes {
+      color: #868080;
+      font-size: 22px;
+    }
+
+    .comics {
+      color: #b9b3b3;
+    }
+  }
+}
+
+.footer-content {
+  background-color: #fff;
+  padding: 40px 0;
+
+  .footer-copyright {
+    margin-top: 15px;
+
+    p {
+      text-align: center;
+      font-style: italic;
+      line-height: 1.5;
+    }
+  }
 }
 
 /* Desktop --------------- */
@@ -506,6 +572,52 @@ nav {
 
       .card:hover {
         border: 2px solid $grayColor;
+      }
+    }
+  }
+
+  /* other Category section------------- */
+  .other-categories-section {
+    padding: 60px 0;
+    background-color: $secColor;
+
+    h2 {
+      text-align: center;
+      color: $grayColor;
+      font-size: 25px;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      flex-direction: row;
+
+      li {
+        font-size: 30px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  /* Footer content--------- */
+  footer {
+    background-color: #fff;
+  }
+
+  .footer-content {
+    display: flex;
+    width: 80%;
+    margin: auto;
+
+    .footer-copyright {
+      margin-top: 15px;
+
+      p {
+        text-align: left;
+        line-height: 1.5;
       }
     }
   }

@@ -35,6 +35,20 @@ ul li {
   margin: auto;
 }
 
+/* horizontal rule ------------ */
+.horizontal-line {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.horizontal-line .hr {
+  background-color: #ec5242;
+  width: 60px;
+  margin: auto;
+  height: 1px;
+  border-radius: 20px;
+}
+
 /* Page logo---- */
 .logo-icon-container .logo {
   display: -webkit-box;
@@ -109,6 +123,7 @@ ul li {
 header {
   height: 76px;
   background-color: #fff;
+  overflow: hidden;
 }
 
 /* Main nav links---------- */
@@ -178,15 +193,17 @@ nav .nav-container {
 /* headline sectionn --------- */
 .headeline-container {
   position: relative;
+  overflow: hidden;
 }
 
 .headeline-container .headline-image {
-  width: 100vw;
+  width: 100%;
   height: 205px;
   background-image: url("../images/images (5).jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .headline {
@@ -259,19 +276,6 @@ nav .nav-container {
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 20px;
-}
-
-.event-container .horizontal-line {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.event-container .horizontal-line .hr {
-  background-color: #ec5242;
-  width: 60px;
-  margin: auto;
-  height: 1px;
-  border-radius: 20px;
 }
 
 .event-container .event-card {
@@ -347,6 +351,74 @@ nav .nav-container {
   word-spacing: 6px;
   font-weight: 400;
   letter-spacing: 3px;
+  line-height: 1.5;
+}
+
+/* other Category section------------- */
+.other-categories-section {
+  padding: 60px 0;
+  background-color: #272a31;
+}
+
+.other-categories-section h2 {
+  text-align: center;
+  color: #d3d3d3;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.other-categories-section ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 40px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.other-categories-section ul li {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.other-categories-section ul .history {
+  color: #b9b3b3;
+}
+
+.other-categories-section ul .fitness {
+  color: #868080;
+  font-size: 22px;
+}
+
+.other-categories-section ul .presentation {
+  color: #d1caca;
+}
+
+.other-categories-section ul .jokes {
+  color: #868080;
+  font-size: 22px;
+}
+
+.other-categories-section ul .comics {
+  color: #b9b3b3;
+}
+
+.footer-content {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.footer-content .footer-copyright {
+  margin-top: 15px;
+}
+
+.footer-content .footer-copyright p {
+  text-align: center;
+  font-style: italic;
   line-height: 1.5;
 }
 
@@ -529,5 +601,60 @@ nav .nav-container {
 
   .event-container .event-card .card:hover {
     border: 2px solid #d3d3d3;
+  }
+
+  /* other Category section------------- */
+  .other-categories-section {
+    padding: 60px 0;
+    background-color: #272a31;
+  }
+
+  .other-categories-section h2 {
+    text-align: center;
+    color: #d3d3d3;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+
+  .other-categories-section ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 40px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .other-categories-section ul li {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  /* Footer content--------- */
+  footer {
+    background-color: #fff;
+  }
+
+  .footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: auto;
+  }
+
+  .footer-content .footer-copyright {
+    margin-top: 15px;
+  }
+
+  .footer-content .footer-copyright p {
+    text-align: left;
+    line-height: 1.5;
   }
 }
