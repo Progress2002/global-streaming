@@ -9,8 +9,14 @@ $fontFamily : 'Lato', sans-serif;
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $fontFamily;
+  background-color: $grayColor;
+  opacity: 0.9;
 }
 
 /* defualt style for all `a` tags */
@@ -29,7 +35,7 @@ ul {
 }
 
 .container {
-  width: 90%;
+  width: 94%;
   margin: auto;
 }
 
@@ -68,12 +74,14 @@ ul {
 /* mobile menu pop up ------------ */
 .mobile-menu {
   position: fixed;
-  background-color: $grayColor;
+  background-color: $secColor;
   opacity: 0.95;
   width: 60%;
   top: 78px;
   right: 0;
   display: none;
+  z-index: 9;
+  // border: 3px solid $secColor;
 
   ul {
     margin: 30px;
@@ -82,7 +90,7 @@ ul {
       font-size: 18px;
       font-weight: 600;
       display: block;
-      color: $secColor;
+      color: $grayColor;
       margin: 35px 0;
       padding: 0 0 10px 8px;
       border-bottom: 1px solid $priColor;
@@ -91,7 +99,7 @@ ul {
     .mobile-link:hover,
     .mobile-link:focus {
       color: $priColor;
-      border-bottom: 1px solid $secColor;
+      border-bottom: 1px solid $grayColor;
     }
   }
 }
@@ -119,6 +127,7 @@ nav {
     align-items: center;
     width: 100%;
     background-color: #fff;
+    z-index: 10;
   }
 }
 
@@ -160,6 +169,8 @@ nav {
 
 /* headline sectionn --------- */
 .headeline-container {
+  position: relative;
+
   .headline-image {
     width: 100vw;
     height: 205px;
@@ -167,15 +178,6 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  .headline-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: $grayColor;
-    opacity: 0.9;
-    z-index: -1;
   }
 }
 
@@ -241,6 +243,99 @@ nav {
     font-weight: 600;
     font-size: 15px;
   }
+}
+
+/* Event section -------------------- */
+.event {
+  background-color: $secColor;
+  margin-top: 40px;
+  padding: 50px 0;
+}
+
+.event-container {
+  h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .horizontal-line {
+    text-align: center;
+    margin-bottom: 40px;
+
+    .hr {
+      background-color: $priColor;
+      width: 60px;
+      margin: auto;
+      height: 1px;
+      border-radius: 20px;
+    }
+  }
+
+  .event-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .card {
+      display: flex;
+      align-items: center;
+      background-color: #353b47;
+      padding: 10px 7px;
+
+      .title-img {
+        width: 50%;
+        display: flex;
+        align-items: center;
+
+        .image {
+          font-size: 30px;
+          color: #fff;
+          padding-right: 5px;
+        }
+
+        h3 {
+          color: $priColor;
+          font-weight: 600;
+          font-style: normal;
+        }
+      }
+
+      .card-description {
+        width: 50%;
+        font-style: normal;
+
+        a {
+          color: #fff;
+          line-height: 1.5;
+          font-weight: 100;
+        }
+      }
+
+      .card-description a:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .card:hover {
+      border: 2px solid $grayColor;
+    }
+  }
+}
+
+.selected-category-link {
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  text-decoration: underline;
+  word-spacing: 6px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: 1.5;
 }
 
 /* Desktop --------------- */
@@ -360,6 +455,58 @@ nav {
 
     em {
       display: inline-block;
+    }
+  }
+
+  /* Event section -------------------- */
+  .event {
+    padding: 70px 0;
+  }
+
+  .event-container {
+    .event-card {
+      flex-direction: row;
+      gap: 8px;
+      margin: auto;
+
+      .card {
+        width: 25%;
+        display: block;
+        text-align: center;
+        padding: 10px 10px;
+
+        .title-img {
+          width: 100%;
+          display: block;
+
+          .image {
+            font-size: 60px;
+            padding-right: 0;
+          }
+
+          h3 {
+            color: $priColor;
+            font-weight: 600;
+            font-size: 26px;
+            margin: 15px 0;
+          }
+        }
+
+        .card-description {
+          width: 100%;
+          font-size: 18px;
+          word-spacing: 2;
+
+          a {
+            color: #fff;
+            line-height: 1.5;
+          }
+        }
+      }
+
+      .card:hover {
+        border: 2px solid $grayColor;
+      }
     }
   }
 }
