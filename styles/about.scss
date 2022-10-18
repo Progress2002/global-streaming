@@ -3,10 +3,93 @@ $secColor : #272a31;
 $grayColor : #d3d3d3;
 $fontFamily : 'Lato', sans-serif;
 
-footer {
+/* headline section -------- */
+.about-healine-section {
+  .about-title {
     text-align: center;
+    margin: 50px 0 40px;
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 20px;
+    color: $priColor;
 
-    p {
-        text-align: center;
+    span {
+      display: block;
     }
+  }
+
+  /* about description section --------- */
+  .about-description {
+    p {
+      margin: 10px 10px 40px;
+      padding: 20px;
+      line-height: 1.5;
+      font-size: 16px;
+      text-align: center;
+      font-style: normal;
+      background-color: #cac4c4;
+      box-shadow:
+        0 1px 0 #ccc,
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0, 0, 0, 0.1),
+        0 0 5px rgba(0, 0, 0, 0.1),
+        0 1px 3px rgba(0, 0, 0, 0.3),
+        0 3px 5px rgba(0, 0, 0, 0.2),
+        0 5px 10px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.2),
+        0 20px 20px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  /* contact section --------- */
+  .contact {
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 0 30px;
+
+    span {
+      display: block;
+      font-weight: 600;
+      font-style: italic;
+    }
+  }
+}
+
+@media (min-width: 765px) {
+  /* headline section -------- */
+  .about-healine-section {
+    .about-title {
+      text-align: center;
+      margin: 50px 0 30px;
+      line-height: 1.5;
+      font-weight: 900;
+      font-size: 25px;
+    }
+
+    /* about description section --------- */
+    .about-description {
+      p {
+        max-width: 56.23rem;
+        margin: 60px auto 65px;
+        font-size: 20px;
+      }
+    }
+
+    /* contact section --------- */
+    .contact {
+      font-size: 15px;
+      text-align: center;
+      line-height: 1.5;
+      padding: 0 30px;
+
+      span {
+        font-weight: 600;
+        font-style: italic;
+      }
+    }
+  }
 }
