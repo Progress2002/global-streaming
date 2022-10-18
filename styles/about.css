@@ -35,12 +35,50 @@
   text-align: center;
   line-height: 1.5;
   padding: 0 30px;
+  margin-bottom: 50px;
 }
 
 .about-healine-section .contact span {
   display: block;
   font-weight: 600;
   font-style: italic;
+}
+
+/* about-recent-events section --------- */
+.about-recent-events {
+  background-color: #aaa;
+  padding: 50px 0;
+}
+
+.about-recent-events h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-recent-events .recent-event-description {
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.about-recent-events .embeded-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-recent-events .embeded-video .video {
+  background-color: #fff;
+  width: 100%;
+  height: 270px;
+  -webkit-box-shadow: 0 1px 0 #807c7c, 0 2px 0 #888686, 0 3px 0 #575454, 0 4px 0 #7a7878, 0 5px 0 #555353, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 0 #807c7c, 0 2px 0 #888686, 0 3px 0 #575454, 0 4px 0 #7a7878, 0 5px 0 #555353, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
 @media (min-width: 765px) {
@@ -75,5 +113,45 @@
   .about-healine-section .contact span {
     font-weight: 600;
     font-style: italic;
+  }
+
+  /* about-recent-events section --------- */
+  .about-recent-events {
+    background-color: #aaa;
+    padding: 50px 0;
+  }
+
+  .about-recent-events h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .about-recent-events .recent-event-description {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 60px;
+  }
+
+  .about-recent-events .embeded-video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+
+  .about-recent-events .embeded-video .video {
+    background-color: #fff;
+    width: 100%;
+    height: 270px;
+  }
+
+  .about-recent-events .embeded-video .video:hover {
+    cursor: pointer;
   }
 }

@@ -51,9 +51,10 @@
       <!-- mobile menu pop up -->
       <div class="mobile-menu ">
         <ul class="menu-list">
-          <li><a class="mobile-link" href="./index.html">Home</a></li>
-          <li><a class="mobile-link" href="./about.html">About</a></li>
-          <li><a class="mobile-link" href="#event-categories">Event</a></li>
+          <li><a class="mobile-link" href="index.html">Home</a></li>
+          <li><a class="mobile-link" href="about.html">About</a></li>
+          <li><a class="mobile-link" href="index.html#event-categories">Event</a></li>
+          <li><a class="mobile-link" href="#event">See recent</a></li>
           <li><a class="mobile-link" href="#" >Live Streaming</a></li>
           <li><a class="mobile-link" class="sign-up" id="sign-up-btn2" href="#">Sign Up</a></li>
         </ul>
@@ -75,10 +76,10 @@
           <!-- Main nav links---------- -->
           <ul class="main-nav-links">
             <li>
-              <a class="nav-link" href="./index.html"><span class="nav-active">Home</span></a>
+              <a class="nav-link" href="index.html"><span class="nav-active">Home</span></a>
             </li>
-            <li><a class="nav-link" href="./about.html">About</a></li>
-            <li><a class="nav-link" href="#">Upcoming</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="index.html#event-categories">Upcoming</a></li>
             <li><a class="nav-link" href="#">Live Streaming</a></li>
           </ul>
 
@@ -103,21 +104,33 @@
       <p class="contact container">Please contact us via email for feedback or any other inquiry about Global Streaming 
         <span>globalstreaming2022@gmail.com</span></p>
       </section>
-      <section class="about-recent-events">
+
+      <!-- about recent event section-------------- -->
+      <section class="about-recent-events" id="event">
         <div class="container">
           <h2>See recent streamed events </h2>
           <div class="horizontal-line">
             <div class="hr"></div>
           </div>
+          <p class="recent-event-description">Take a look at three top past events which was streamed live here .....</p>
           <div class="embeded-video">
-            <div class="video"></div>
-            <div class="video"></div>
-            <div class="video"></div>
+            <div class="video">
+              <iframe width="100%" height="270" src="https://www.youtube.com/embed/c78H-nolqxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+              <iframe width="100%" height="270" src="https://www.youtube.com/embed/A_9m5INlV-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+            <div class="video">
+              <iframe width="100%" height="270" src="https://www.youtube.com/embed/7WU__JQuB8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer >
+
+    <!-- footer section ---------------- -->
+    <footer  id="footer">
       <section class="other-categories-section">
         <h2>Follow Us</h2>
         <div class="horizontal-line">
