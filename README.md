@@ -27,11 +27,11 @@ Global streaming a worldwide online website where users can create an event, see
 
 ## Live Demo (if available)
 
-[Live Demo Link]()
+[Live Demo Link](https://progress2002.github.io/global-streaming/)
 
 ## Link to Presentation on this Project
 
-[See Presentation]()
+[See Presentation](https://www.loom.com/share/1413f8ab49124a10b35b08bddd4463b3)
 
 
 ## Getting Started
@@ -76,4 +76,3 @@ Give a ⭐️ if you like this project!
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
