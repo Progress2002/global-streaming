@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Global Streaming is live-streaming website that allow users to record and broadcast video simultaneously.">
+
+    <!-- Font Awesome kit Code-------- -->
+    <script
+      src="https://kit.fontawesome.com/b21ce73c3c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google fonts ------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+
+    <!-- script links ----------- -->
+    <script src="./scripts/script.js" type="text/javascript" defer></script>
+    <script src="./scripts/static.js" type="text/javascript" defer></script>
+
+    <!--local  styles Link---------- -->
+    <link rel="icon" href="./images/logo.jpg" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Global streamimg</title>
+  </head>
+  <body>
+    <!-- page header section -->
+    <header>
+      <!-- top nav -->
+      <div class="top-nav">
+        <ul class="top-nav-links container">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li><a href="#">English</a></li>
+          <li><a id="user-page1" href="#">My page</a></li>
+          <li><a class="sign-up-btn" id="sign-up-btn1" href="#">Sign Up</a></li>
+        </ul>
+      </div>
+      <!-- top nav ends here -->
+
+      <!-- mobile menu pop up -->
+      <div class="mobile-menu">
+        <ul class="menu-list">
+          <li><a class="mobile-link" href="./index.html">Home</a></li>
+          <li><a class="mobile-link" href="./about.html">About</a></li>
+          <li><a class="mobile-link" href="#event-categories">Event</a></li>
+          <li><a class="mobile-link" href="#">Live Streaming</a></li>
+          <li><a class="mobile-link" class="sign-up" id="sign-up-btn2" href="#">Sign Up</a></li>
+        </ul>
+      </div>
+      <!-- mobile menu pop up ends here-->
+
+      <nav>
+        <div class="nav-container container">
+          <!-- Page logo------------------ -->
+          <div class="logo-icon-container">
+            <a class="logo" href="./index.html">
+              <div class="logo-img">
+                <img src="./images/logo.jpg" alt="logo" />
+              </div>
+              <div class="logo-name"><span>Global</span> Streaming</div>
+            </a>
+          </div>
+
+          <!-- Main nav links---------- -->
+          <ul class="main-nav-links">
+            <li>
+              <a class="nav-link" href="index.html"><span class="nav-active">Home</span></a>
+            </li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="#event-categories">Upcoming</a></li>
+            <li><a class="nav-link" href="#">Live Streaming</a></li>
+          </ul>
+
+          <!-- hamburger icon--------------- -->
+          <div class="hamburger ">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main section ------------------ -->
+    <main class="main">
+      <!-- headline section --------------------- -->
+      <section class="headeline-container">
+        <div class="headline-image"></div>
+        <div class="headline-overlay"></div>
+        <div class="headline container">
+          <span class="intro">"Welcom hearing!"</span>
+          <h1 class="slogan">
+            CREATE AND STREAM LIVE WORLDWIDE POPULAR EVENTS
+          </h1>
+          <p class="headlin-description">
+            Hello, you are at the right website to get your audio recodings, event coverage and videos streamed live to the people around the world. Hear we grant users access to create, modify and publish events and audio podcast with high quality.
+          </p>
+          <div class="trending-event-container">
+            <h3><i>Trending Today</i></h3>
+            <h3 class="topic">Transition into tech BY Dennis Ritchie </h3>
+            <p class="date">October-2022-28(FRI) ~ 29(SAT)</p>
+            <p class="venue">@National Meseum of Korea. <em>Stream live @www.global-streaming.org</em</p>
+          </div>
+        </div>
+      </section>
+      <!-- Events section ------------- -->
+      <section class="event" id="event-categories">
+        <div class="event-container container">
+          <h2>Upcoming Events</h2>
+          <div class="horizontal-line">
+            <div class="hr"></div>
+          </div>
+          <div class="event-card">
+            <div class="card" >
+              <div class="title-img">
+                <div class="image">
+                  <i class="fa-solid fa-newspaper"></i>
+                </div>
+                <h3>News</h3>
+              </div>
+              <p class="card-description ">
+                <a href="#category-display" id="news" class="clicable-card news">Information  that is published in newspapers and broadcast on radio and television about recent events in the country or world or in a particular area of activity.</a>
+              </p>
+            </div>
+            <div class="card">
+              <div class="title-img">
+                <div class="image">
+                  <i class="fa-solid fa-music"></i>
+                </div>
+                <h3>Entertainment</h3>
+              </div>
+              <p class="card-description">
+                <a href="#category-display" id="entertainment" class="clicable-card entertainment">These events are form of activities that holds the attention and interest of an audience or gives pleasure and delight.</a>
+              </p>
+            </div>
+            <div class="card">
+              <div class="title-img">
+                <div class="image">
+                  <i class="fa-solid fa-book"></i>
+                </div>
+                <h3 class="clicable-card education">Education</h3>
+              </div>
+              <p class="card-description">
+                <a href="#category-display" id="education" class="clicable-card education">Events purposeful activity directed at achieving certain aims, such as transmitting knowledge or fostering skills and character traits</a>
+              </p>
+            </div>
+            <div class="card" >
+              <div class="title-img">
+                <div class="image">
+                  <i class="fa-solid fa-basketball"></i>
+                </div>
+                <h3>Sports</h3>
+              </div>
+              <p class="card-description">
+                <a href="#category-display" id="sports" class="clicable-card sports">Events involving physical exertion and skill in which an individual or team competes against another or others for entertainment</a>
+              </p>
+            </div>
+          </div>
+          <a href="#category-display" class="selected-category-link ">See selected events category</a>
+        </div>
+      </section>
+      <!-- category-display card section---------------- -->
+      <section id="category-display"></section>  
+      <!-- end of category-display section-------------- -->
+    </main>
+        <footer >
+          <section class="other-categories-section">
+            <h2>Other categories</h2>
+            <div class="horizontal-line">
+              <div class="hr"></div>
+            </div>
+            <ul class="container">
+              <li class="history">
+                <i class="fa-regular fa-clock "></i>
+                History
+              </li>
+              <li class="fitness">
+                <i class="fa-solid fa-dumbbell"></i>
+                Fitness
+              </li>
+              <li class="presentation">
+                <i class="fa-solid fa-person-chalkboard"></i>
+                Presentation
+              </li>
+              <li class="jokes">
+                <i class="fa-solid fa-face-grin-tongue-wink"></i>
+                Jokes
+              </li>
+              <li class="comics">
+                <i class="fa-solid fa-person-falling-burst"></i>
+                Comics
+              </li>
+            </ul>
+          </section>
+          <section class="footer-content">
+            <div class="logo-icon-container footer-logo container">
+              <a class="logo" href="./index.html">
+                <div class="logo-img">
+                  <img src="./images/logo.jpg" alt="logo" />
+                </div>
+                <div class="logo-name"><span>Global</span> Streaming</div>
+              </a>
+            </div>
+            <div class="footer-copyright container">
+              <p>&copy; 2022 Global Streaming</p>
+              <p>Author : Progress C. Ezeamaka</p>
+            </div>
+          </section>
+        </footer>
+  </body>
+</html>
