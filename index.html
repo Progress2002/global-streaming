@@ -19,6 +19,7 @@
 
     <!-- script links ----------- -->
     <script src="./scripts/script.js" type="text/javascript" defer></script>
+    <script src="./scripts/static.js" type="text/javascript" defer></script>
 
     <!--local  styles Link---------- -->
     <link rel="icon" href="./images/logo.jpg" />
@@ -116,19 +117,19 @@
           <div class="horizontal-line">
             <div class="hr"></div>
           </div>
-          <div class="event-card" id="news">
-            <div class="card">
+          <div class="event-card">
+            <div class="card" >
               <div class="title-img">
                 <div class="image">
                   <i class="fa-solid fa-newspaper"></i>
                 </div>
                 <h3>News</h3>
               </div>
-              <p class="card-description">
-                <a href="#category-display">Information  that is published in newspapers and broadcast on radio and television about recent events in the country or world or in a particular area of activity.</a>
+              <p class="card-description ">
+                <a href="#category-display" id="news" class="clicable-card news">Information  that is published in newspapers and broadcast on radio and television about recent events in the country or world or in a particular area of activity.</a>
               </p>
             </div>
-            <div class="card" id="entertainment">
+            <div class="card">
               <div class="title-img">
                 <div class="image">
                   <i class="fa-solid fa-music"></i>
@@ -136,21 +137,21 @@
                 <h3>Entertainment</h3>
               </div>
               <p class="card-description">
-                <a href="#category-display">These events are form of activities that holds the attention and interest of an audience or gives pleasure and delight.</a>
+                <a href="#category-display" id="entertainment" class="clicable-card entertainment">These events are form of activities that holds the attention and interest of an audience or gives pleasure and delight.</a>
               </p>
             </div>
-            <div class="card" id="education">
+            <div class="card">
               <div class="title-img">
                 <div class="image">
                   <i class="fa-solid fa-book"></i>
                 </div>
-                <h3>Education</h3>
+                <h3 class="clicable-card education">Education</h3>
               </div>
               <p class="card-description">
-                <a href="#category-display">Events purposeful activity directed at achieving certain aims, such as transmitting knowledge or fostering skills and character traits</a>
+                <a href="#category-display" id="education" class="clicable-card education">Events purposeful activity directed at achieving certain aims, such as transmitting knowledge or fostering skills and character traits</a>
               </p>
             </div>
-            <div class="card" id="sports">
+            <div class="card" >
               <div class="title-img">
                 <div class="image">
                   <i class="fa-solid fa-basketball"></i>
@@ -158,15 +159,16 @@
                 <h3>Sports</h3>
               </div>
               <p class="card-description">
-                <a href="#category-display">Events involving physical exertion and skill in which an individual or team competes against another or others for entertainment</a>
+                <a href="#category-display" id="sports" class="clicable-card sports">Events involving physical exertion and skill in which an individual or team competes against another or others for entertainment</a>
               </p>
             </div>
           </div>
-          <a href="#" class="selected-category-link ">See selected events category</a>
+          <a href="#category-display" class="selected-category-link ">See selected events category</a>
         </div>
       </section>
-      kkkkkkkkkkkkkkkkkkkkkkkkkkk
-      <section id="category-display"></section>
+      <!-- category-display card section---------------- -->
+      <section id="category-display"></section>  
+      <!-- end of category-display section-------------- -->
     </main>
         <footer >
           <section class="other-categories-section">
