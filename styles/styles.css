@@ -603,6 +603,14 @@ nav .nav-container {
     letter-spacing: 1px;
   }
 
+  .main-nav-links li .nav-link.home-page {
+    color: #ec5242;
+  }
+
+  .main-nav-links li .nav-link.about-page {
+    color: #ec5242;
+  }
+
   .main-nav-links li .nav-link:hover,
   .main-nav-links li .nav-link:focus,
   .main-nav-links li .nav-link:active {
