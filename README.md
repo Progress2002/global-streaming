@@ -25,7 +25,7 @@ Global streaming a worldwide online website where users can create an event, see
   - [ ] Stylelint
   - [ ] ESlint
 
-## Live Demo (if available)
+## Live Demo 
 
 [Live Demo Link](https://progress2002.github.io/global-streaming/)
 
@@ -74,5 +74,5 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](LICENSE.md) licensed.
 
