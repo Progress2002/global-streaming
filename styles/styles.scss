@@ -564,6 +564,14 @@ nav {
         letter-spacing: 1px;
       }
 
+      .nav-link.home-page {
+        color: $priColor;
+      }
+
+      .nav-link.about-page {
+        color: $priColor;
+      }
+
       .nav-link:hover,
       .nav-link:focus,
       .nav-link:active {
