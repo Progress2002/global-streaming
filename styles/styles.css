@@ -84,15 +84,18 @@ ul li {
 }
 
 /* mobile menu pop up ------------ */
+
 .mobile-menu {
   position: fixed;
   background-color: #272a31;
-  opacity: 0.95;
   width: 60%;
   top: 78px;
   right: 0;
-  display: none;
+  visibility: hidden;
   z-index: 9;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
 }
 
 .mobile-menu ul {
@@ -117,9 +120,12 @@ ul li {
 
 .mobile-menu.active {
   display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 /* mobile menu pop up ends here--------- */
+
 header {
   height: 76px;
   background-color: #fff;
@@ -127,6 +133,7 @@ header {
 }
 
 /* Main nav links---------- */
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -157,6 +164,7 @@ nav .nav-container {
 }
 
 /* hamburger icon--------------- */
+
 .hamburger {
   display: block;
 }
@@ -191,6 +199,7 @@ nav .nav-container {
 /* Main container section-------------- */
 
 /* headline sectionn --------- */
+
 .headeline-container {
   position: relative;
   overflow: hidden;
@@ -264,6 +273,7 @@ nav .nav-container {
 }
 
 /* category display section ---------------- */
+
 #category-display {
   padding: 60px 0;
 }
@@ -358,6 +368,7 @@ nav .nav-container {
 /* end category display section ---------------- */
 
 /* Event section -------------------- */
+
 .event {
   background-color: #272a31;
   margin-top: 40px;
@@ -390,8 +401,22 @@ nav .nav-container {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: #353b47;
-  padding: 10px 7px;
+  padding: 18px 20px;
+  border-radius: 5px;
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition:
+    transform 300ms ease-in-out,
+    -webkit-transform 300ms ease-in-out;
 }
 
 .event-container .event-card .card .title-img {
@@ -402,29 +427,34 @@ nav .nav-container {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .event-container .event-card .card .title-img .image {
   font-size: 30px;
   color: #fff;
-  padding-right: 5px;
+  margin-right: 18px;
 }
 
 .event-container .event-card .card .title-img h3 {
   color: #ec5242;
   font-weight: 600;
   font-style: normal;
+  margin-bottom: 8px;
+  text-align: center;
 }
 
 .event-container .event-card .card .card-description {
-  width: 50%;
+  width: 100%;
   font-style: normal;
+  padding-bottom: 1rem;
 }
 
 .event-container .event-card .card .card-description a {
   color: #fff;
   line-height: 1.5;
   font-weight: 100;
+  font-size: 1rem;
 }
 
 .event-container .event-card .card .card-description a:hover {
@@ -449,6 +479,7 @@ nav .nav-container {
 }
 
 /* other Category section------------- */
+
 .other-categories-section {
   padding: 60px 0;
   background-color: #272a31;
@@ -517,6 +548,7 @@ nav .nav-container {
 }
 
 /* Desktop --------------- */
+
 @media (min-width: 765px) {
   .container {
     width: 80%;
@@ -529,6 +561,7 @@ nav .nav-container {
   }
 
   /* top nav ----------- */
+
   .top-nav {
     background-color: #272a31;
     display: block;
@@ -564,6 +597,7 @@ nav .nav-container {
   }
 
   /* main nav --------------- */
+
   nav {
     width: 100vw;
     height: 70px;
@@ -587,6 +621,7 @@ nav .nav-container {
   }
 
   /* Main nav links---------- */
+
   .main-nav-links {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -618,6 +653,7 @@ nav .nav-container {
   }
 
   /* hamburger icon--------------- */
+
   .hamburger {
     display: none;
   }
@@ -625,6 +661,7 @@ nav .nav-container {
   /* Main container section-------------- */
 
   /* headline sectionn --------- */
+
   .headeline-container .headline-image {
     width: 100vw;
     height: 250px;
@@ -653,6 +690,7 @@ nav .nav-container {
   }
 
   /* category display section ---------------- */
+
   #category-display {
     padding: 60px 0 80px;
   }
@@ -691,6 +729,7 @@ nav .nav-container {
   /* end category display section ---------------- */
 
   /* Event section -------------------- */
+
   .event {
     padding: 70px 0;
   }
@@ -744,6 +783,7 @@ nav .nav-container {
   }
 
   /* other Category section------------- */
+
   .other-categories-section {
     padding: 60px 0;
     background-color: #272a31;
@@ -777,6 +817,7 @@ nav .nav-container {
   }
 
   /* Footer content--------- */
+
   footer {
     background-color: #fff;
   }
@@ -798,3 +839,4 @@ nav .nav-container {
     line-height: 1.5;
   }
 }
+/*# sourceMappingURL=styles.css.map */
